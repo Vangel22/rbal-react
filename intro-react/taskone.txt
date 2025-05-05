@@ -1,0 +1,7 @@
+UserCard Component
+
+Task: Create a UserCard component that accepts name, age, and location as props and displays them inside a card layout.
+
+Bonus: Accept an avatar image URL prop and display it with <img>.
+
+Here is an example: https://bbbootstrap.github.io/bbimages/images/DtBhOa5.png

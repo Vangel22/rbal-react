@@ -8,7 +8,7 @@ function App() {
   return (
     <>
       <div>
-        <JohnDoe />
+        <JohnDoe name="John Doe" age={25} />
         <AvatarAdvanced />
         <a href="https://vite.dev" target="_blank">
           {/* src="/test.png" */}
