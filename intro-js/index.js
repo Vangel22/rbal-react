@@ -1,3 +1,5 @@
+const { name } = require("ejs");
+
 // Global
 var x = "Hello students";
 
@@ -13,3 +15,12 @@ console.log(x);
 greet();
 
 // Block
+
+// const user = {
+//   name: "User me",
+//   test: function () {
+//     console.log("test", this.name);
+//   },
+// };
+
+// user.test();

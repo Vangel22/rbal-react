@@ -5,5 +5,5 @@ const user = {
   },
 };
 
-const greetFunction = user.greet;
+const greetFunction = user.greet.bind(user);
 greetFunction(); // Fix this so it prints "Hello, my name is David"
