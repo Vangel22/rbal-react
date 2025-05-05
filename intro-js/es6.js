@@ -43,6 +43,34 @@ console.log(sumTwoNumbers());
 
 // Example 3 - Spread operator
 
+// request.body -> email, password
+// req.auth
+
+// const data = {
+//   ...request.body, // email, password
+//   ...req.auth, // token, validate, jwt
+// };
+
+// Combined all the data needed to call the validateAuthorization
+const data = {
+  email: "h.vangel22@gmail.com",
+  password: "test",
+  token: "some",
+  validate: () => {},
+  jwt: "some jwt",
+};
+
+// validateAuthorization(data)
+
+const program = {
+  taskOne: "hello students",
+};
+
+const programTwo = {
+  ...program,
+  taskTwo: "lets learn",
+};
+
 const numbers = [1, 2, 3];
 const letters = ["a", "b", "c"];
 
