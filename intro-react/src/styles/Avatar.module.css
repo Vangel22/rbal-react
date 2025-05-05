@@ -1,0 +1,13 @@
+.header {
+  font-size: 40px;
+  color: red;
+}
+
+.image {
+  height: 350px;
+  width: 350px;
+}
+
+.image:hover {
+  transform: scale(1.5);
+}
