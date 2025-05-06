@@ -1,8 +1,14 @@
+import { useState } from "react";
 import "./App.css";
+import { Counter } from "./components/Counter";
 import { FirstApp } from "./components/FirstApp";
 import { EventBubblingExample } from "./events/EventBubbling";
 import { EventPreventDefault } from "./events/EventPreventDefault";
 import { Playing } from "./events/Playing";
+import { Input } from "./components/Input";
+import { Greeting } from "./components/Greeting";
+import { Accordion } from "./components/Accordion";
+import { Messenger } from "./components/Messenger";
 
 function App() {
   function onSmash() {
@@ -36,6 +42,10 @@ function App() {
     },
   ];
 
+  const [name, setName] = useState("");
+
+  // name = "Not to do"
+
   return (
     <>
       {/* <FirstApp
@@ -49,7 +59,15 @@ function App() {
 
       {/* <Playing /> */}
       {/* <EventBubblingExample /> */}
-      <EventPreventDefault />
+      {/* <EventPreventDefault /> */}
+      {/* <Counter /> */}
+      {/* Lifting state up */}
+      {/* <Input name={name} setName={setName} />
+      <Greeting name={name} /> */}
+      {/* Passing state through components */}
+      {/* <Accordion /> */}
+      {/* Persist and reset state */}
+      <Messenger />
     </>
   );
 }

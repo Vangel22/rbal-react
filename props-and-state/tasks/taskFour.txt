@@ -1,0 +1,9 @@
+Task four
+
+1. Click a button to toggle "Favorite" status ❤️
+2. Click another button to toggle visibility of extra info (like email + address)
+
+Learned:
+1. How to import and use useState
+2. How to toggle state
+3. How to conditionally render UI based on state

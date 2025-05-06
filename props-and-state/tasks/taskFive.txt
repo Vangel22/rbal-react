@@ -1,0 +1,18 @@
+Task five
+
+1. Log when a user is favorited
+2. Simulate fetching extra user info on first render of the card (setTimeout usage)
+3. Clean-up function for the setTimeout - clearTimeout
+
+
+Learned:
+1. How to use useEffect
+
+2. What a side effect is (e.g., logging, fetching)
+
+3. How to run code:
+    - On initial render ([])
+
+    - On state change ([isFavorite])
+
+    - How to clean up a side effect
