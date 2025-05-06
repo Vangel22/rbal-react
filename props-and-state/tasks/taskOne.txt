@@ -1,0 +1,10 @@
+Task one
+
+1. You need to create a Card component with image, name, age, email, isVerified, address
+2. Create an array that will display multiple Cards
+3. Conditionally render every Card that has age > 18 in the JSX
+4. Filter every card that isVerified = true
+5. Repeat the step 3 but using an IF statement
+
+Learned:
+Props handling, conditional rendering, list rendering and filtering
