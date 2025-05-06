@@ -1,0 +1,13 @@
+Prop types
+
+1. Validate the props of your Card component from task one
+2. The field are 
+    - image
+    - name 
+    - age 
+    - email 
+    - isVerified 
+    - address
+
+Learned: 
+    Prop-types library and how to change the react version

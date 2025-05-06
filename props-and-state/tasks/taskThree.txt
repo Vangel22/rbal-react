@@ -1,0 +1,6 @@
+Event handlers
+
+1. Fix the Switch component
+2. Fix the LightSwitch component
+
+Bonus: Make the LightSwitch component with useState

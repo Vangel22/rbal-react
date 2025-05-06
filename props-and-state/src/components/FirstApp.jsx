@@ -1,3 +1,5 @@
+import PropTypes from "prop-types";
+
 const FirstApp = ({ title, subtitle, name, disabled, onSmash }) => {
   const array = [1, 2, 3, 4];
 
@@ -58,4 +60,24 @@ const FirstApp = ({ title, subtitle, name, disabled, onSmash }) => {
   );
 };
 
+FirstApp.propTypes = {
+  title: PropTypes.string.isRequired,
+  subtitle: PropTypes.string.isRequired,
+  name: PropTypes.string.isRequired,
+  disabled: PropTypes.bool,
+  onSmash: PropTypes.func,
+};
+
 export { FirstApp };
+
+// Command 1: ➜
+// npm uninstall react react-dom @types/react @types/react-dom
+
+// Command 2: ➜
+// npm install react@18 react-dom@18 @types/react@18 @types/react-dom@18
+
+// Task: Implement the PropTypes for your card component
+
+// To import prop types:
+
+// import PropTypes from "prop-types";
