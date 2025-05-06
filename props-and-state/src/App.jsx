@@ -9,6 +9,8 @@ import { Input } from "./components/Input";
 import { Greeting } from "./components/Greeting";
 import { Accordion } from "./components/Accordion";
 import { Messenger } from "./components/Messenger";
+import TodoList from "./components/TodoList";
+import { TrafficLight } from "./components/TrafficLight";
 
 function App() {
   function onSmash() {
@@ -42,9 +44,24 @@ function App() {
     },
   ];
 
-  const [name, setName] = useState("");
+  // const [name, setName] = useState("");
 
   // name = "Not to do"
+
+  const todos = [
+    {
+      title: "Todo 1",
+      content: "testing",
+    },
+    {
+      title: "Todo 2",
+      content: "testing",
+    },
+    {
+      title: "Todo 3",
+      content: "testing",
+    },
+  ];
 
   return (
     <>
@@ -67,7 +84,9 @@ function App() {
       {/* Passing state through components */}
       {/* <Accordion /> */}
       {/* Persist and reset state */}
-      <Messenger />
+      {/* <Messenger /> */}
+      {/* <TodoList todos={todos} /> */}
+      <TrafficLight />
     </>
   );
 }
