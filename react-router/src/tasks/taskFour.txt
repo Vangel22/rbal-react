@@ -1,0 +1,10 @@
+Part One
+
+Version with createBrowserRouter
+1. Modify userLoader -> postsLoader to fetch a single post by ID using a dynamic route (redo with /posts)
+2. Add validation in addNewUser (e.g., ensure the name is at least 6 characters long) and return an error response if invalid.
+3. Add a delete button to MutateUser that triggers a DELETE action to remove the user.
+
+Part Two
+
+1. Retype and test your routes inside a createBrowserRouter
