@@ -6,6 +6,10 @@ import { StaticRoutes } from "./components/StaticRoutes";
 import { CatchAllRoutes } from "./components/CatchAllRoutes";
 import { DynamicRoutes } from "./components/DynamicRoutes";
 import { NestedRoutes } from "./components/NestedRoutes";
+import { LayoutRoutes } from "./components/LayoutRoutes";
+import { ProtectedRoutes } from "./components/ProtectedRoutes";
+import { QueryUsingRoutes } from "./components/QueryUsingRoutes";
+import LazyRoutes from "./components/LazyRoutes";
 
 createRoot(document.getElementById("root")).render(
   <StrictMode>
@@ -14,8 +18,10 @@ createRoot(document.getElementById("root")).render(
       {/* <CatchAllRoutes /> */}
       {/* <DynamicRoutes /> */}
       {/* <NestedRoutes /> */}
+
       {/* <LayoutRoutes /> */}
       {/* <ProtectedRoutes /> */}
+
       {/* <QueryUsingRoutes /> */}
       {/* <LazyRoutes /> */}
     </BrowserRouter>
