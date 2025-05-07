@@ -1,0 +1,4 @@
+ Task 
+
+1. Fetch the posts with fetch api
+2. Fetch the posts with axios (keep the axios config)
