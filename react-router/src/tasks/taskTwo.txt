@@ -1,0 +1,14 @@
+Request: At least three routes inside every component
+
+<LayoutRoutes />
+<ProtectedRoutes />
+
+const useAuth = () => {
+  const token = localStorage.getItem("");
+};
+
+const ProtectedRoute = () => {
+  const isAuth = useAuth();
+
+  return isAuth ? <Outlet /> : ;
+};
