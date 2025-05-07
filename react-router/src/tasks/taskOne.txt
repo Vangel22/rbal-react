@@ -1,0 +1,6 @@
+Request: At least three routes inside every component
+
+<StaticRoutes />
+<CatchAllRoutes />
+<DynamicRoutes />
+<NestedRoutes />
