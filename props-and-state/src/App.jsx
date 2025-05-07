@@ -74,7 +74,7 @@ function App() {
         onSmash={onSmash}
       /> */}
 
-      {/* <Playing /> */}
+      <Playing />
       {/* <EventBubblingExample /> */}
       {/* <EventPreventDefault /> */}
       {/* <Counter /> */}
@@ -87,8 +87,17 @@ function App() {
       {/* <Messenger /> */}
       {/* <TodoList todos={todos} /> */}
       <TrafficLight />
+
+      {/* <SomeComponent props={{ name: "Vangel"}} />
+      <SomeComponent>
+        schdhiudhifiod
+      </SomeComponent> */}
     </>
   );
 }
+
+// function SomeComponent({ children }) {
+//   return <>{children}</>;
+// }
 
 export default App;
