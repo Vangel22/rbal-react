@@ -1,0 +1,5 @@
+Request: At least three routes inside every component
+
+<QueryRoutes / > -> add at least 2 elements as a query param ( & )
+
+<LazyLoadedRoute />  -> lazy load your Card component
