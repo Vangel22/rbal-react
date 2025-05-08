@@ -1,0 +1,11 @@
+Tasks: 
+
+- Reducer example - ShoppingList
+
+Redux tasks
+- Redux example with incrementByAmount normal. Add an incrementByAmount action that increments the counter by a user-specified amount.
+- Redux example with decrementByAmount async. Add an decrementByAmount action that decrements the counter by a user-specified amount.
+    Additionally: check if the amount is a number, if not return an error
+
+- Prop drilling example to fix with Reducer
+    
