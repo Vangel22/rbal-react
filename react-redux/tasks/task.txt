@@ -4,6 +4,8 @@ Tasks:
 
 Redux tasks
 - Create a decrement and dispatch it in Counter
+    - decrement inside createSlice.js
+    - use the decrement inside a button in Counter.jsx
 
 
 - Redux example with incrementByAmount normal. Add an incrementByAmount action that increments the counter by a user-specified amount.
