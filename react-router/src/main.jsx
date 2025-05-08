@@ -29,6 +29,12 @@ const router = createBrowserRouter([
     element: <UserPage />,
     loader: userLoader,
     errorElement: <ErrorPage />,
+    children: [
+      {
+        path: "/user",
+        element: <h1>User path</h1>,
+      },
+    ],
   },
   {
     path: "/add-user",
