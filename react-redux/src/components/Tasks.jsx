@@ -55,39 +55,34 @@ export const Tasks = () => {
 
   const handleAddTask = (e) => {
     e.preventDefault();
-
     if (newTaskText.trim() === "") return;
-
-    dispatch({ type: "add", id: nextIndex++, text: newTaskText, done: false });
+    dispatch({ type: "add", id: nextIndex++, text: newTaskText });
     setNewTaskText("");
   };
 
-  const handleToggleTask = (task) => {
-    dispatch({ type: "toggle", task: { ...task, done: !task.done } });
-  };
-
-  const handleUpdateTask = (id) => {
-    dispatch({ type: "update", id, text: editText });
-    setEditText("");
-  };
-
-  const handleDeleteTask = (id) => {
+  const handleDelete = (id) => {
     dispatch({ type: "delete", id });
   };
 
-  console.log("edit", editTask);
+  const handleToggle = (task) => {
+    dispatch({ type: "toggle", task: { ...task, done: !task.done } });
+  };
+
+  const handleUpdate = (id) => {
+    dispatch({ type: "update", id, text: editText });
+    setEditTask(null);
+  };
 
   return (
     <div>
       <h1>Tasks</h1>
       <form onSubmit={handleAddTask}>
         <input
-          type="text"
           value={newTaskText}
           onChange={(e) => setNewTaskText(e.target.value)}
-          placeholder="Enter name of task"
+          placeholder="Enter task name"
         />
-        <button type="submit">Add new task</button>
+        <button type="submit">Add</button>
       </form>
 
       {tasks.map((task) => (
@@ -95,17 +90,15 @@ export const Tasks = () => {
           <input
             type="checkbox"
             checked={task.done}
-            onChange={() => handleToggleTask(task)}
+            onChange={() => handleToggle(task)}
           />
-
           {editTask === task.id ? (
             <>
               <input
-                type="text"
                 value={editText}
                 onChange={(e) => setEditText(e.target.value)}
               />
-              <button onClick={() => handleUpdateTask(task.id)}>Save</button>
+              <button onClick={() => handleUpdate(task.id)}>Save</button>
               <button onClick={() => setEditTask(null)}>Cancel</button>
             </>
           ) : (
@@ -121,7 +114,7 @@ export const Tasks = () => {
               </button>
             </>
           )}
-          <button onClick={() => handleDeleteTask(task.id)}>Delete</button>
+          <button onClick={() => handleDelete(task.id)}>Delete</button>
         </div>
       ))}
     </div>
