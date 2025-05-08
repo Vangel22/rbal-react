@@ -13,7 +13,11 @@ export const Counter = () => {
   return (
     <div>
       <h1>Counter {count}</h1>
-      <button onClick={() => dispatch(incrementWithAmountAsync(""))}>
+      {/* TODO: Do this with a state */}
+      {/* <input /> */}
+      {/* dispatch(incrementWithAmountAsync(someNumber from state) */}
+
+      <button onClick={() => dispatch(incrementWithAmountAsync(50))}>
         Increment by amount
       </button>
       <button onClick={() => dispatch(increment())}>Increment</button>

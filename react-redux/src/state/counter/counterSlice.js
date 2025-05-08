@@ -43,22 +43,22 @@ export const counterSlice = createSlice({
 
 // TODO: Decrement by amount
 
-// export const incrementWithAmountAsync = createAsyncThunk(
-//   "counter/incrementAsync",
-//   async (amount, { rejectWithValue }) => {
-//     try {
-//       console.log("Here", amount);
-//       await new Promise((res) => setTimeout(res, 3000));
-//       // we are simulating that we are awaiting data from some source for 3 seconds
-//       if (typeof amount !== "number" || isNaN(amount)) {
-//         throw new Error("Invalid amount: must be a number");
-//       }
-//       return amount;
-//     } catch (err) {
-//       rejectWithValue(err.message);
-//     }
-//   }
-// );
+export const incrementWithAmountAsync = createAsyncThunk(
+  "counter/incrementAsync",
+  async (amount, { rejectWithValue }) => {
+    try {
+      console.log("Here", amount);
+      await new Promise((res) => setTimeout(res, 3000));
+      // we are simulating that we are awaiting data from some source for 3 seconds
+      if (typeof amount !== "number" || isNaN(amount)) {
+        throw new Error("Invalid amount: must be a number");
+      }
+      return amount;
+    } catch (err) {
+      rejectWithValue(err.message);
+    }
+  }
+);
 
 export const { increment, decrement, reset } = counterSlice.actions;
 
