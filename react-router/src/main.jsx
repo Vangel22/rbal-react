@@ -53,19 +53,19 @@ const router = createBrowserRouter([
 
 createRoot(document.getElementById("root")).render(
   <StrictMode>
-    {/* <BrowserRouter> */}
-    {/* <StaticRoutes /> */}
-    {/* <CatchAllRoutes /> */}
-    {/* <DynamicRoutes /> */}
-    {/* <NestedRoutes /> */}
+    <BrowserRouter>
+      {/* <StaticRoutes /> */}
+      {/* <CatchAllRoutes /> */}
+      {/* <DynamicRoutes /> */}
+      {/* <NestedRoutes /> */}
 
-    {/* <LayoutRoutes /> */}
-    {/* <ProtectedRoutes /> */}
+      {/* <LayoutRoutes /> */}
+      <ProtectedRoutes />
 
-    {/* <QueryUsingRoutes /> */}
-    {/* <LazyRoutes /> */}
-    {/* </BrowserRouter> */}
-    <RouterProvider router={router} />
+      {/* <QueryUsingRoutes /> */}
+      {/* <LazyRoutes /> */}
+    </BrowserRouter>
+    {/* <RouterProvider router={router} /> */}
   </StrictMode>
 );
 

@@ -11,7 +11,11 @@ const useAuth = () => {
 const ProtectedRoute = () => {
   const isAuth = useAuth();
 
-  return isAuth ? <Outlet /> : <Navigate to={"/"} replace />;
+  return isAuth ? (
+    <Outlet /> // go to line number 26
+  ) : (
+    <Navigate to={"/"} replace />
+  ); // go to line 24
 };
 
 export const ProtectedRoutes = () => {
